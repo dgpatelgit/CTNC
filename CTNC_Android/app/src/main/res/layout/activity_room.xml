@@ -1,0 +1,149 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_room"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#000030"
+        android:id="@+id/room_name">
+        <TextView
+            android:text="Living Room"
+            android:textSize="26dp"
+            android:textColor="#409000"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/left_arrow_layout">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/left_arrow"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/left_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fillViewport="true"
+                android:foregroundGravity="center_horizontal"
+                android:focusable="true"
+                style="@style/Base.Widget.AppCompat.TextView.SpinnerItem"
+                android:id="@+id/mainScrollView" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Orange Light"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:textSize="30sp"
+                    android:clickable="true"
+                    android:singleLine="true"
+                    android:textStyle="normal|bold"
+                    android:textColor="#000080"
+                    android:id="@+id/text_switch_name"
+                    android:gravity="center" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:id="@+id/right_arrow_layout">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/right_arrow"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/layout_switch_image"
+        android:gravity="center"
+        android:background="#000000">
+        <ImageSwitcher
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:id="@+id/imageSwitcher"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#000030"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_addition">
+        <Button
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:gravity="center"
+            android:background="@drawable/plus"
+            />
+    </LinearLayout>
+
+</LinearLayout>
